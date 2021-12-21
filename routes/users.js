@@ -35,6 +35,16 @@ router.post("/", async (req, res) => {
     }
 })
 
+router.get("/login", async (req, res) => {
+    try {
+        res.json({msg:"login work"});
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
 router.post("/login",async (req,res)=>{
     let validBody = validateLogin(req.body)
     if (validBody.error) {
