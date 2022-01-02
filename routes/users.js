@@ -68,4 +68,16 @@ router.post("/login",async (req,res)=>{
     }
 })
 
+router.delete("/:idDel", auth, async (req, res) => {
+    let idDel = req.params.idDel;
+    try {
+        let data = await UserModel.deleteOne({ _id: idDel, user_id: req.tokenData._id });
+        res.json(data);
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
 module.exports = router;

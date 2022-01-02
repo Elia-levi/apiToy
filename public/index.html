@@ -46,6 +46,7 @@
                 <li>Search products by name or info:<a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/toys/?s=bus" target="_blank">/toys/?s=key word</a> <span> (Get)</span></li>
                 <li>Get 10 products by page number:<a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/toys/?page=number" target="_blank">/toys/?page=number</a> <span> (Get)</span></li>
                 <li>Get all products by category:<a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/toys/cat/Cars" target="_blank">/toys/cat/:categoryName </a><span> (Get)</span></li>
+                <p  class=" ps-2 text-secondary">options of categoryName: Cars, Construction games, Tabletop games.</p>
                 <li>Price range:<a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/toys/prices/?min=10&max=40" target="_blank">/toys/prices/?min=10&max=40</a>  <span> (Get)</span></li>
             </ul>
             <!-- end -->
@@ -80,6 +81,9 @@
                 <li>password <span >(required)</span></li>
                 <li>role </li>
             </ul>
+             <!-- end -->
+             <h4 class="display-6 mx-1 mt-4"> Delete user</h4>
+             <div class="ps-3">Delete user - (only for register user - must send user's auth-token through headers): <a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/users/?_id" target="_blank">/users/:_id (user)</a>   <span style="color: red;"> (DELETE)</span></div>
              <!-- end -->
             <h4 class="display-6 mx-1 mt-4">Login user</h4>
             <div class="ps-3 mb-2">  Login:<a class="nav-link ps-1 d-inline-block" href=" https://api-toysproject.herokuapp.com/users/login" target="_blank">/users/login</a>  <span style="color: orange;"> (Post)</span></div>
